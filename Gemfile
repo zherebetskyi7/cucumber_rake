@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'cucumber'
+gem 'capybara'
+gem 'site_prism'
+gem 'rake'
+gem 'faker'
+gem 'selenium-webdriver'
+gem 'chromedriver-helper'
+gem 'headless'
