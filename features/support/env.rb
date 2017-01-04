@@ -1,13 +1,11 @@
 require 'capybara/cucumber'
 require 'capybara'
 require 'site_prism'
-=begin
-Capybara.register_driver :selenium do |app|
-  Capybara::Selenium::Driver.new(app, :browser => :chrome)
-end
+require 'capybara-screenshot/cucumber'
 
-Capybara.javascript_driver = :selenium
-=end
+Capybara::Screenshot.autosave_on_failure = true
+Capybara.save_path = './tmp/'
+
 Capybara.register_driver( :selenium ){ |app| Capybara::Selenium::Driver.new( app, :browser => :chrome ) }
 
 Capybara.configure do |config|

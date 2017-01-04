@@ -1,3 +1,5 @@
+#require 'capybara-screenshot/cucumber'
+
 Before do
   if Capybara.current_driver == :selenium
     require 'headless'
@@ -9,3 +11,12 @@ Before do
     
   end
 end
+=begin
+After do |scenario|
+  if scenario.failed?
+    encoded_img = @browser.driver.screenshot_as(:base64)
+    embed("data:image/png;base64, #{encoded_img}",'image/png')
+
+  end
+end
+=end
