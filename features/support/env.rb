@@ -16,4 +16,5 @@ Capybara.configure do |config|
   config.default_driver    = :selenium 
   config.app_host          = 'https://alfajazzfest.com/en'
   config.default_max_wait_time = 3
+  config.include Capybara::DSL
 end

@@ -7,8 +7,9 @@ end
 Then(/^User sees content join us$/) do
   @page = Home.new
   @page.join_us_content.click
+  expect(page).to have_content 'Join Us'
 end
 
 Then(/^User sees content Multimedia$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(page).to have_content 'Multimedia'
 end
