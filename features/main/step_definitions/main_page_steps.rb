@@ -1,7 +1,9 @@
 #require "./pages/main_page_page.rb"
 
 When(/^User opens main page$/) do
-  visit "https://alfajazzfest.com/en"
+  #visit "https://alfajazzfest.com/en"
+  @page = Home.new
+  @page.site_url
 end
 
 Then(/^User sees content join us$/) do
