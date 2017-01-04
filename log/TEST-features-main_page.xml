@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite failures="0" errors="0" skipped="1" tests="1" time="5.112601" name="open main page and see content">
-<testcase classname="open main page and see content" name="User opens main page and see content" time="5.112601">
+<testsuite failures="0" errors="0" skipped="1" tests="1" time="5.234742" name="open main page and see content">
+<testcase classname="open main page and see content" name="User opens main page and see content" time="5.234742">
   <skipped/>
   <system-out>
     <![CDATA[]]>

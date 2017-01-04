@@ -1,4 +1,6 @@
 require 'capybara/cucumber'
+require 'capybara'
+require 'site_prism'
 =begin
 Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(app, :browser => :chrome)
